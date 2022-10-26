@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "input.h" 
+#include "input.h" // Hier binden wir die Bibliothek ein
 
 int fibonacci(n){
     if(n < 2){
@@ -12,9 +12,9 @@ int fibonacci(n){
 }
 
 int main(){
-    int n = lese_int(); 
+    int n = lese_int(); // Hier rufen wir die Funktion lese_int auf.
     int f = fibonacci(n-1);
-    printf("Fibonacci(%d) = %d\n" , n, f); 
+    printf("Fib(%d) = %d\n" , n, f); 
 
-    return 0; 
+    return 0; //Beende das Programm ohne Fehlermeldung
 }
